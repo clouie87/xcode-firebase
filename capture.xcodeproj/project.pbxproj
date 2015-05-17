@@ -43,6 +43,10 @@
 		5C4060001B07E22000F52418 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FFA1B07E22000F52418 /* TPKeyboardAvoidingScrollView.m */; };
 		5C4060011B07E22000F52418 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FFC1B07E22000F52418 /* TPKeyboardAvoidingTableView.m */; };
 		5C4060021B07E22000F52418 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FFE1B07E22000F52418 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		5C4060041B082C3700F52418 /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4060031B082C3700F52418 /* ChallengeTableViewCell.swift */; };
+		5C4060061B08305700F52418 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4060051B08305700F52418 /* Data.swift */; };
+		5C4060081B08308300F52418 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4060071B08308300F52418 /* SwiftyJSON.swift */; };
+		5C40600A1B08317E00F52418 /* ChallengesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4060091B08317E00F52418 /* ChallengesTableViewController.swift */; };
 		5C58E95C1AFBFE920000A106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C58E95B1AFBFE920000A106 /* AppDelegate.swift */; };
 		5C58E95E1AFBFE920000A106 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C58E95D1AFBFE920000A106 /* FirstViewController.swift */; };
 		5C58E9601AFBFE920000A106 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C58E95F1AFBFE920000A106 /* SecondViewController.swift */; };
@@ -112,6 +116,10 @@
 		5C405FFC1B07E22000F52418 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 		5C405FFD1B07E22000F52418 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		5C405FFE1B07E22000F52418 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		5C4060031B082C3700F52418 /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		5C4060051B08305700F52418 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5C4060071B08308300F52418 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		5C4060091B08317E00F52418 /* ChallengesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesTableViewController.swift; sourceTree = "<group>"; };
 		5C58E9561AFBFE920000A106 /* capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C58E95B1AFBFE920000A106 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C58E95D1AFBFE920000A106 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -241,10 +249,14 @@
 		5C58E9581AFBFE920000A106 /* capture */ = {
 			isa = PBXGroup;
 			children = (
+				5C4060071B08308300F52418 /* SwiftyJSON.swift */,
 				5C58E95B1AFBFE920000A106 /* AppDelegate.swift */,
 				5CB0E9B61B06176D00803DB3 /* capture-Bridging-Header.h */,
 				5C58E95D1AFBFE920000A106 /* FirstViewController.swift */,
+				5C4060051B08305700F52418 /* Data.swift */,
 				5C405FE11B07AC3E00F52418 /* Login.swift */,
+				5C4060031B082C3700F52418 /* ChallengeTableViewCell.swift */,
+				5C4060091B08317E00F52418 /* ChallengesTableViewController.swift */,
 				5C405FE61B07B59D00F52418 /* LoginPageVIewController.swift */,
 				5C405FE31B07AC9A00F52418 /* LoggingInTableViewCell.swift */,
 				5C58E95F1AFBFE920000A106 /* SecondViewController.swift */,
@@ -379,6 +391,7 @@
 				5C405FCA1B07A6E100F52418 /* DesignableLabel.swift in Sources */,
 				5C405FD91B07A6E100F52418 /* SpringImageView.swift in Sources */,
 				5C405FC61B07A6E100F52418 /* AutoTextView.swift in Sources */,
+				5C4060081B08308300F52418 /* SwiftyJSON.swift in Sources */,
 				5C405FE21B07AC3E00F52418 /* Login.swift in Sources */,
 				5C405FCF1B07A6E100F52418 /* ImageLoader.swift in Sources */,
 				5C405FD41B07A6E100F52418 /* Misc.swift in Sources */,
@@ -397,6 +410,7 @@
 				5C405FFF1B07E22000F52418 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				5C405FDF1B07A6E100F52418 /* TransitionZoom.swift in Sources */,
 				5C405FCC1B07A6E100F52418 /* DesignableTextField.swift in Sources */,
+				5C40600A1B08317E00F52418 /* ChallengesTableViewController.swift in Sources */,
 				5C4060011B07E22000F52418 /* TPKeyboardAvoidingTableView.m in Sources */,
 				5C4060001B07E22000F52418 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				5C405FDE1B07A6E100F52418 /* TransitionManager.swift in Sources */,
@@ -410,9 +424,11 @@
 				5C405FDC1B07A6E100F52418 /* SpringTextView.swift in Sources */,
 				5C405FD11B07A6E100F52418 /* KeyboardLayoutConstraint.swift in Sources */,
 				5C405FD81B07A6E100F52418 /* SpringButton.swift in Sources */,
+				5C4060061B08305700F52418 /* Data.swift in Sources */,
 				5C405FD71B07A6E100F52418 /* SpringAnimation.swift in Sources */,
 				5C405FC91B07A6E100F52418 /* DesignableImageView.swift in Sources */,
 				5C58E95E1AFBFE920000A106 /* FirstViewController.swift in Sources */,
+				5C4060041B082C3700F52418 /* ChallengeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

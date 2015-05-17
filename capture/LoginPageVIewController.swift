@@ -41,13 +41,14 @@ class LoginPageVIewController: UIViewController {
                     let uid = result["uid"] as? String
                     println("Successfully created user account with uid: \(uid)")
                     
+                    
                     var user = [
-//                        "uid": uid as String,
+                        "uid": uid as String!,
                         "name": self.emailTextField.text as String,
                         "password": self.passwordTextField.text as String
                     ]
                     
-                    var usersRef = self.ref.childByAppendingPath("profile")
+                    var usersRef = self.ref.childByAppendingPath(uid)
                     usersRef.setValue(user)
                     
             
