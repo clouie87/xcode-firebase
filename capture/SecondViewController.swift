@@ -20,8 +20,18 @@ class SecondViewController: UIViewController {
 //    var gracehop = ["full_name": "Grace Hopper", "date_of_birth": "December 9, 1906"]
 //
 
+    @IBOutlet weak var imageImageView: DesignableImageView!
+    
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let pic1 = "pic 1"
+        imageImageView.image = UIImage(named: pic1)
+        
+        
+        
         
 //        var usersRef = ref.childByAppendingPath("users")
 //        
