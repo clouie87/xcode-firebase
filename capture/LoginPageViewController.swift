@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginPageVIewController: UIViewController {
+class LoginPageViewController: UIViewController {
     
 
     @IBOutlet weak var emailTextField: DesignableTextField!

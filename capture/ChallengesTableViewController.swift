@@ -8,9 +8,12 @@
 
 import UIKit
 
-class ChallengesTableViewController: UITableViewController {
+class ChallengesTableViewController: UITableViewController, ChallengeTableViewCellDelegate {
     
     var challenges: JSON! = []
+    
+    @IBOutlet weak var firstNavItem: UINavigationItem!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +21,8 @@ class ChallengesTableViewController: UITableViewController {
         
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         
-
-        // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "navBarImage"), forBarMetrics: UIBarMetrics.Default)
+        
     }
     
    
@@ -35,6 +38,8 @@ class ChallengesTableViewController: UITableViewController {
         
         let challenge = data[indexPath.row]
         
+        
+        
         let title = challenge["title"].string!
         let id = challenge["id"].string!
         
@@ -43,12 +48,41 @@ class ChallengesTableViewController: UITableViewController {
         cell.titleLabel.text = title
         cell.imageImageView.image = UIImage(named: "pic " + id)
         
-        
         cell.configureWithChallenge(challenge)
+        
+        cell.delegate = self
         
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        println("we are in the row")
+        
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
+    }
+    
+     // MARK: ChallengeTableViewCellDelegate
+    
+    func challengeTableViewCellDidTouchNext(cell: ChallengeTableViewCell, sender: AnyObject) {
+                println("will perform segue here")
+        performSegueWithIdentifier("SubmitSegue", sender: cell)
+    }
+    
+    
+    //MARK: Misc
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "SubmitSegue" {
+            println("preping for segue")
+            let toView = segue.destinationViewController as! SubmitsTableViewController
+            let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
+//            toView.challenge = challenges[indexPath.row]
+        }
+    }
+    
+   
     
     
 //    println("this is in challenges")

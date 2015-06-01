@@ -38,7 +38,7 @@
 		5C405FE01B07A6E100F52418 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FC31B07A6E100F52418 /* UnwindSegue.swift */; };
 		5C405FE21B07AC3E00F52418 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FE11B07AC3E00F52418 /* Login.swift */; };
 		5C405FE41B07AC9A00F52418 /* LoggingInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FE31B07AC9A00F52418 /* LoggingInTableViewCell.swift */; };
-		5C405FE71B07B59D00F52418 /* LoginPageVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FE61B07B59D00F52418 /* LoginPageVIewController.swift */; };
+		5C405FE71B07B59D00F52418 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FE61B07B59D00F52418 /* LoginPageViewController.swift */; };
 		5C405FFF1B07E22000F52418 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FF81B07E22000F52418 /* TPKeyboardAvoidingCollectionView.m */; };
 		5C4060001B07E22000F52418 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FFA1B07E22000F52418 /* TPKeyboardAvoidingScrollView.m */; };
 		5C4060011B07E22000F52418 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FFC1B07E22000F52418 /* TPKeyboardAvoidingTableView.m */; };
@@ -53,6 +53,19 @@
 		5C58E9651AFBFE920000A106 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C58E9641AFBFE920000A106 /* Images.xcassets */; };
 		5C58E9681AFBFE920000A106 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C58E9661AFBFE920000A106 /* LaunchScreen.xib */; };
 		5C58E9741AFBFE920000A106 /* captureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C58E9731AFBFE920000A106 /* captureTests.swift */; };
+		5C9E3ED91B1BBAA000B39A30 /* SubmitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E3ED81B1BBAA000B39A30 /* SubmitsTableViewController.swift */; };
+		5CA81A651B1A54DE002971A5 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5CA81A5A1B1A54DE002971A5 /* LICENSE.txt */; };
+		5CA81A661B1A54DE002971A5 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CA81A5B1B1A54DE002971A5 /* OpenSans-Bold.ttf */; };
+		5CA81A671B1A54DE002971A5 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CA81A5C1B1A54DE002971A5 /* OpenSans-BoldItalic.ttf */; };
+		5CA81A681B1A54DE002971A5 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CA81A5D1B1A54DE002971A5 /* OpenSans-ExtraBold.ttf */; };
+		5CA81A691B1A54DE002971A5 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CA81A5E1B1A54DE002971A5 /* OpenSans-ExtraBoldItalic.ttf */; };
+		5CA81A6A1B1A54DE002971A5 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CA81A5F1B1A54DE002971A5 /* OpenSans-Italic.ttf */; };
+		5CA81A6B1B1A54DE002971A5 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CA81A601B1A54DE002971A5 /* OpenSans-Light.ttf */; };
+		5CA81A6C1B1A54DE002971A5 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CA81A611B1A54DE002971A5 /* OpenSans-LightItalic.ttf */; };
+		5CA81A6D1B1A54DE002971A5 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CA81A621B1A54DE002971A5 /* OpenSans-Regular.ttf */; };
+		5CA81A6E1B1A54DE002971A5 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CA81A631B1A54DE002971A5 /* OpenSans-Semibold.ttf */; };
+		5CA81A6F1B1A54DE002971A5 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CA81A641B1A54DE002971A5 /* OpenSans-SemiboldItalic.ttf */; };
+		5CA81A711B1A573E002971A5 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA81A701B1A573E002971A5 /* CaptureViewController.swift */; };
 		5CB0E99F1B053B0D00803DB3 /* TemplateInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CB0E99B1B053B0D00803DB3 /* TemplateInfo.plist */; };
 		5CB0E9A31B053DF700803DB3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB0E9A21B053DF700803DB3 /* CFNetwork.framework */; };
 		5CB0E9A51B053E2800803DB3 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB0E9A41B053E2800803DB3 /* libicucore.dylib */; };
@@ -106,7 +119,7 @@
 		5C405FC31B07A6E100F52418 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		5C405FE11B07AC3E00F52418 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		5C405FE31B07AC9A00F52418 /* LoggingInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingInTableViewCell.swift; sourceTree = "<group>"; };
-		5C405FE61B07B59D00F52418 /* LoginPageVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageVIewController.swift; sourceTree = "<group>"; };
+		5C405FE61B07B59D00F52418 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		5C405FF71B07E22000F52418 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		5C405FF81B07E22000F52418 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		5C405FF91B07E22000F52418 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
@@ -128,6 +141,19 @@
 		5C58E96D1AFBFE920000A106 /* captureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = captureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C58E9721AFBFE920000A106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C58E9731AFBFE920000A106 /* captureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = captureTests.swift; sourceTree = "<group>"; };
+		5C9E3ED81B1BBAA000B39A30 /* SubmitsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitsTableViewController.swift; sourceTree = "<group>"; };
+		5CA81A5A1B1A54DE002971A5 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		5CA81A5B1B1A54DE002971A5 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		5CA81A5C1B1A54DE002971A5 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5CA81A5D1B1A54DE002971A5 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5CA81A5E1B1A54DE002971A5 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		5CA81A5F1B1A54DE002971A5 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		5CA81A601B1A54DE002971A5 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		5CA81A611B1A54DE002971A5 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		5CA81A621B1A54DE002971A5 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		5CA81A631B1A54DE002971A5 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		5CA81A641B1A54DE002971A5 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		5CA81A701B1A573E002971A5 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		5CB0E99B1B053B0D00803DB3 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = TemplateInfo.plist; path = "Single View Application.xctemplate/TemplateInfo.plist"; sourceTree = "<group>"; };
 		5CB0E9A21B053DF700803DB3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5CB0E9A41B053E2800803DB3 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
@@ -197,8 +223,7 @@
 				5C405FC21B07A6E100F52418 /* TransitionZoom.swift */,
 				5C405FC31B07A6E100F52418 /* UnwindSegue.swift */,
 			);
-			name = Spring;
-			path = capture/Spring;
+			path = Spring;
 			sourceTree = "<group>";
 		};
 		5C405FF61B07E22000F52418 /* TPKeyboardAvoiding */ = {
@@ -213,15 +238,14 @@
 				5C405FFD1B07E22000F52418 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
 				5C405FFE1B07E22000F52418 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 			);
-			path = TPKeyboardAvoiding;
+			name = TPKeyboardAvoiding;
+			path = ../TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
 		5C58E94D1AFBFE920000A106 = {
 			isa = PBXGroup;
 			children = (
-				5C405FF61B07E22000F52418 /* TPKeyboardAvoiding */,
 				5CB0E9B71B0617A300803DB3 /* Info.plist */,
-				5C405FA51B07A6E100F52418 /* Spring */,
 				5CB0E9AA1B053E4C00803DB3 /* SystemConfiguration.framework */,
 				5CB0E9A81B053E4200803DB3 /* Security.framework */,
 				5CB0E9A61B053E3A00803DB3 /* libc++.dylib */,
@@ -247,14 +271,19 @@
 		5C58E9581AFBFE920000A106 /* capture */ = {
 			isa = PBXGroup;
 			children = (
+				5C405FF61B07E22000F52418 /* TPKeyboardAvoiding */,
+				5CA81A591B1A54DE002971A5 /* Open_Sans */,
+				5C405FA51B07A6E100F52418 /* Spring */,
 				5C4060071B08308300F52418 /* SwiftyJSON.swift */,
 				5C58E95B1AFBFE920000A106 /* AppDelegate.swift */,
 				5CB0E9B61B06176D00803DB3 /* capture-Bridging-Header.h */,
 				5C4060051B08305700F52418 /* Data.swift */,
 				5C405FE11B07AC3E00F52418 /* Login.swift */,
+				5C9E3ED81B1BBAA000B39A30 /* SubmitsTableViewController.swift */,
+				5CA81A701B1A573E002971A5 /* CaptureViewController.swift */,
 				5C4060091B08317E00F52418 /* ChallengesTableViewController.swift */,
 				5C4D14F81B0A970E00DE98D1 /* ChallengeTableViewCell.swift */,
-				5C405FE61B07B59D00F52418 /* LoginPageVIewController.swift */,
+				5C405FE61B07B59D00F52418 /* LoginPageViewController.swift */,
 				5C405FE31B07AC9A00F52418 /* LoggingInTableViewCell.swift */,
 				5C58E95F1AFBFE920000A106 /* SecondViewController.swift */,
 				5C58E9611AFBFE920000A106 /* Main.storyboard */,
@@ -279,6 +308,24 @@
 				5C58E9721AFBFE920000A106 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CA81A591B1A54DE002971A5 /* Open_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				5CA81A5A1B1A54DE002971A5 /* LICENSE.txt */,
+				5CA81A5B1B1A54DE002971A5 /* OpenSans-Bold.ttf */,
+				5CA81A5C1B1A54DE002971A5 /* OpenSans-BoldItalic.ttf */,
+				5CA81A5D1B1A54DE002971A5 /* OpenSans-ExtraBold.ttf */,
+				5CA81A5E1B1A54DE002971A5 /* OpenSans-ExtraBoldItalic.ttf */,
+				5CA81A5F1B1A54DE002971A5 /* OpenSans-Italic.ttf */,
+				5CA81A601B1A54DE002971A5 /* OpenSans-Light.ttf */,
+				5CA81A611B1A54DE002971A5 /* OpenSans-LightItalic.ttf */,
+				5CA81A621B1A54DE002971A5 /* OpenSans-Regular.ttf */,
+				5CA81A631B1A54DE002971A5 /* OpenSans-Semibold.ttf */,
+				5CA81A641B1A54DE002971A5 /* OpenSans-SemiboldItalic.ttf */,
+			);
+			path = Open_Sans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,12 +409,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C58E9631AFBFE920000A106 /* Main.storyboard in Resources */,
+				5CA81A681B1A54DE002971A5 /* OpenSans-ExtraBold.ttf in Resources */,
+				5CA81A6B1B1A54DE002971A5 /* OpenSans-Light.ttf in Resources */,
 				5C58E9681AFBFE920000A106 /* LaunchScreen.xib in Resources */,
 				5C405FD01B07A6E100F52418 /* Info.plist in Resources */,
+				5CA81A6A1B1A54DE002971A5 /* OpenSans-Italic.ttf in Resources */,
+				5CA81A6D1B1A54DE002971A5 /* OpenSans-Regular.ttf in Resources */,
 				5C58E9651AFBFE920000A106 /* Images.xcassets in Resources */,
+				5CA81A671B1A54DE002971A5 /* OpenSans-BoldItalic.ttf in Resources */,
+				5CA81A651B1A54DE002971A5 /* LICENSE.txt in Resources */,
+				5CA81A6F1B1A54DE002971A5 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				5CA81A691B1A54DE002971A5 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				5CA81A661B1A54DE002971A5 /* OpenSans-Bold.ttf in Resources */,
 				5C405FD31B07A6E100F52418 /* LoadingView.xib in Resources */,
 				5CB0E9B81B0617A300803DB3 /* Info.plist in Resources */,
 				5CB0E99F1B053B0D00803DB3 /* TemplateInfo.plist in Resources */,
+				5CA81A6C1B1A54DE002971A5 /* OpenSans-LightItalic.ttf in Resources */,
+				5CA81A6E1B1A54DE002971A5 /* OpenSans-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,10 +450,11 @@
 				5C405FE21B07AC3E00F52418 /* Login.swift in Sources */,
 				5C405FCF1B07A6E100F52418 /* ImageLoader.swift in Sources */,
 				5C405FD41B07A6E100F52418 /* Misc.swift in Sources */,
-				5C405FE71B07B59D00F52418 /* LoginPageVIewController.swift in Sources */,
+				5C405FE71B07B59D00F52418 /* LoginPageViewController.swift in Sources */,
 				5C405FC71B07A6E100F52418 /* BlurView.swift in Sources */,
 				5C405FE01B07A6E100F52418 /* UnwindSegue.swift in Sources */,
 				5C405FD21B07A6E100F52418 /* LoadingView.swift in Sources */,
+				5C9E3ED91B1BBAA000B39A30 /* SubmitsTableViewController.swift in Sources */,
 				5C405FDB1B07A6E100F52418 /* SpringTextField.swift in Sources */,
 				5C405FD61B07A6E100F52418 /* Spring.swift in Sources */,
 				5C58E9601AFBFE920000A106 /* SecondViewController.swift in Sources */,
@@ -416,6 +475,7 @@
 				5C405FC51B07A6E100F52418 /* AsyncImageView.swift in Sources */,
 				5C4D14F91B0A970E00DE98D1 /* ChallengeTableViewCell.swift in Sources */,
 				5C405FCD1B07A6E100F52418 /* DesignableTextView.swift in Sources */,
+				5CA81A711B1A573E002971A5 /* CaptureViewController.swift in Sources */,
 				5C405FE41B07AC9A00F52418 /* LoggingInTableViewCell.swift in Sources */,
 				5C4060021B07E22000F52418 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				5C405FDD1B07A6E100F52418 /* SpringView.swift in Sources */,

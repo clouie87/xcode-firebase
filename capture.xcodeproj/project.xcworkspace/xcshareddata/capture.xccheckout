@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>17F337BB-7633-40BD-9504-AD3ACED18C38</string>
 	<key>IDESourceControlProjectName</key>
-	<string>capture</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E69AF12494C9F7E5956586EFB5128CC6F29C3E84</key>
 		<string>https://github.com/clouie87/xcode-firebase.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>capture.xcodeproj</string>
+	<string>capture.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E69AF12494C9F7E5956586EFB5128CC6F29C3E84</key>
