@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C15AEB61B1D160C008BE0DE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C15AEB41B1D160C008BE0DE /* Fabric.framework */; };
+		5C15AEB71B1D160C008BE0DE /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C15AEB51B1D160C008BE0DE /* Crashlytics.framework */; };
 		5C405FC41B07A6E100F52418 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FA61B07A6E100F52418 /* AsyncButton.swift */; };
 		5C405FC51B07A6E100F52418 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FA71B07A6E100F52418 /* AsyncImageView.swift */; };
 		5C405FC61B07A6E100F52418 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C405FA81B07A6E100F52418 /* AutoTextView.swift */; };
@@ -87,6 +89,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C15AEB41B1D160C008BE0DE /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		5C15AEB51B1D160C008BE0DE /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		5C405FA61B07A6E100F52418 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		5C405FA71B07A6E100F52418 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		5C405FA81B07A6E100F52418 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -170,7 +174,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C15AEB61B1D160C008BE0DE /* Fabric.framework in Frameworks */,
 				5CB0E9AB1B053E4C00803DB3 /* SystemConfiguration.framework in Frameworks */,
+				5C15AEB71B1D160C008BE0DE /* Crashlytics.framework in Frameworks */,
 				5CB0E9B31B0616A400803DB3 /* Firebase.framework in Frameworks */,
 				5CB0E9A91B053E4200803DB3 /* Security.framework in Frameworks */,
 				5CB0E9A71B053E3A00803DB3 /* libc++.dylib in Frameworks */,
@@ -246,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				5CB0E9B71B0617A300803DB3 /* Info.plist */,
+				5C15AEB41B1D160C008BE0DE /* Fabric.framework */,
+				5C15AEB51B1D160C008BE0DE /* Crashlytics.framework */,
 				5CB0E9AA1B053E4C00803DB3 /* SystemConfiguration.framework */,
 				5CB0E9A81B053E4200803DB3 /* Security.framework */,
 				5CB0E9A61B053E3A00803DB3 /* libc++.dylib */,
@@ -338,6 +346,7 @@
 				5C58E9521AFBFE920000A106 /* Sources */,
 				5C58E9531AFBFE920000A106 /* Frameworks */,
 				5C58E9541AFBFE920000A106 /* Resources */,
+				5C7AB0F91B1D0DA100E742FC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -377,6 +386,7 @@
 				TargetAttributes = {
 					5C58E9551AFBFE920000A106 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7E3299XVA7;
 					};
 					5C58E96C1AFBFE920000A106 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -437,6 +447,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C7AB0F91B1D0DA100E742FC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 9b1eee6fd8347eeb2c91d4b7529bb1d40044c6c6 3a4cfc8ddb8f20540e91a3e0515564b771e1b2cf3e6042bf4f8b5fc2939c7cc1";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C58E9521AFBFE920000A106 /* Sources */ = {
@@ -612,6 +638,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Single",
@@ -624,6 +652,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "capture/capture-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -634,6 +663,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Single",
@@ -646,6 +677,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "capture/capture-Bridging-Header.h";
 			};
 			name = Release;

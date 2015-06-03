@@ -14,7 +14,51 @@ class LoginPageViewController: UIViewController {
     @IBOutlet weak var emailTextField: DesignableTextField!
     @IBOutlet weak var passwordTextField: DesignableTextField!
     
+    @IBOutlet weak var emailImageView: SpringImageView!
+    @IBOutlet weak var closeButton: UIButton!
+    
+    @IBOutlet weak var passwordImageView: SpringImageView!
+    @IBOutlet weak var dialogView: DesignableView!
+    
     var ref = Firebase(url: "https://xcode-capture.firebaseio.com/users/")
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        view.endEditing(true)
+    }
+    
+    
+    @IBAction func closeButtonDidTouch(sender: AnyObject) {
+        
+        
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        
+        if textField == emailTextField {
+            emailImageView.image = UIImage(named: "Shape")
+            emailImageView.animate()
+        } else {
+            emailImageView.image = UIImage(named: "email")
+        }
+        
+        if textField == passwordTextField {
+            passwordImageView.image = UIImage(named: "email")
+            passwordImageView.animate()
+        } else {
+            passwordImageView.image = UIImage(named: "Shape")
+        }
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        emailImageView.image = UIImage(named: "email")
+        passwordImageView.image=UIImage(named: "Shape")
+    }
+    
     
     
     @IBAction func loginButtonDidTouch(sender: AnyObject) {

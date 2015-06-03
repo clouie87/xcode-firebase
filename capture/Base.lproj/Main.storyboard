@@ -64,24 +64,26 @@
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="j3B-fX-ZAe">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcO-mW-udf">
+                                                                    <rect key="frame" x="20" y="6" width="200" height="28"/>
+                                                                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="18"/>
+                                                                    <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pzl-KJ-TmM" customClass="SpringButton" customModule="capture" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="220"/>
+                                                                    <state key="normal">
+                                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="nextButtonDidTouch:" destination="wjo-F6-7Rc" eventType="touchUpInside" id="dQj-Ay-E45"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
                                                         </view>
                                                         <blurEffect style="dark"/>
                                                     </visualEffectView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcO-mW-udf">
-                                                        <rect key="frame" x="20" y="6" width="200" height="28"/>
-                                                        <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="18"/>
-                                                        <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pzl-KJ-TmM" customClass="SpringButton" customModule="capture" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="220"/>
-                                                        <state key="normal">
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="nextButtonDidTouch:" destination="wjo-F6-7Rc" eventType="touchUpInside" id="dQj-Ay-E45"/>
-                                                        </connections>
-                                                    </button>
                                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMU-dL-lol" customClass="SpringButton" customModule="capture" customModuleProvider="target">
                                                         <rect key="frame" x="39" y="177" width="40" height="35"/>
                                                         <state key="normal" image="ios-heart">
@@ -104,11 +106,6 @@
                                                         </state>
                                                     </button>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="QcO-mW-udf" firstAttribute="top" secondItem="Bor-cX-5Yb" secondAttribute="top" constant="6" id="1HO-aY-RMB"/>
-                                                    <constraint firstItem="QcO-mW-udf" firstAttribute="leading" secondItem="Bor-cX-5Yb" secondAttribute="leading" constant="20" id="QEp-0Z-6Io"/>
-                                                    <constraint firstAttribute="trailing" secondItem="QcO-mW-udf" secondAttribute="trailing" constant="10" id="ZG5-qs-Nv9"/>
-                                                </constraints>
                                             </view>
                                             <blurEffect style="dark"/>
                                         </visualEffectView>
@@ -120,12 +117,8 @@
                                         <constraint firstItem="BZO-Qi-dgk" firstAttribute="top" secondItem="qeL-hO-k7J" secondAttribute="top" id="I6e-5Y-X6Z"/>
                                         <constraint firstItem="oUC-Na-bbe" firstAttribute="leading" secondItem="qeL-hO-k7J" secondAttribute="leading" id="JCc-QL-aCW"/>
                                         <constraint firstItem="oUC-Na-bbe" firstAttribute="top" secondItem="qeL-hO-k7J" secondAttribute="top" id="MG5-Vd-sMo"/>
-                                        <constraint firstItem="Pzl-KJ-TmM" firstAttribute="height" secondItem="qeL-hO-k7J" secondAttribute="height" id="Ne5-eQ-9AO"/>
-                                        <constraint firstItem="Pzl-KJ-TmM" firstAttribute="width" secondItem="qeL-hO-k7J" secondAttribute="width" id="R9d-Bu-Tkb"/>
-                                        <constraint firstItem="Pzl-KJ-TmM" firstAttribute="leading" secondItem="qeL-hO-k7J" secondAttribute="leading" id="ZbT-by-wk9"/>
                                         <constraint firstItem="qeL-hO-k7J" firstAttribute="trailing" secondItem="BZO-Qi-dgk" secondAttribute="trailing" id="dCy-ZK-QRU"/>
                                         <constraint firstItem="qeL-hO-k7J" firstAttribute="top" secondItem="jiE-Qm-5l3" secondAttribute="top" constant="20" id="jta-NA-dQK"/>
-                                        <constraint firstItem="Pzl-KJ-TmM" firstAttribute="top" secondItem="qeL-hO-k7J" secondAttribute="top" id="q8g-4X-ULZ"/>
                                         <constraint firstItem="qeL-hO-k7J" firstAttribute="leading" secondItem="BZO-Qi-dgk" secondAttribute="leading" id="qOY-aa-z1b"/>
                                         <constraint firstItem="qeL-hO-k7J" firstAttribute="leading" secondItem="jiE-Qm-5l3" secondAttribute="leading" constant="40" id="sMJ-it-vnB"/>
                                     </constraints>
@@ -265,7 +258,7 @@
                                             <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CameraBody + CameraDetailing + lense" translatesAutoresizingMaskIntoConstraints="NO" id="PbD-D4-Jey">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2 tone camera" translatesAutoresizingMaskIntoConstraints="NO" id="PbD-D4-Jey">
                                             <rect key="frame" x="110" y="244" width="100" height="70"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="bzU-US-tcM"/>
@@ -332,7 +325,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gcw-Nl-THx">
+                                        <scrollView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gcw-Nl-THx" customClass="TPKeyboardAvoidingCollectionView">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFo-FT-98b">
@@ -340,6 +333,9 @@
                                                     <state key="normal">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="closeButtonDidTouch:" destination="Yrk-6x-doo" eventType="touchUpInside" id="VXg-TQ-ZTY"/>
+                                                    </connections>
                                                 </button>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rjn-rA-EZg" customClass="DesignableView" customModule="capture" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="144" width="280" height="280"/>
@@ -353,9 +349,21 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pr4-bY-QxP" customClass="DesignableButton" customModule="capture" customModuleProvider="target">
-                                                                        <rect key="frame" x="20" y="220" width="110" height="40"/>
-                                                                        <color key="backgroundColor" red="0.98369580507278442" green="0.87483442285339319" blue="0.061322788824753449" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BEm-J4-M1A">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="70"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seek and Shoot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snI-SO-uly">
+                                                                                <rect key="frame" x="70" y="21" width="141" height="28"/>
+                                                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
+                                                                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                    </view>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pr4-bY-QxP" customClass="DesignableButton" customModule="capture" customModuleProvider="target">
+                                                                        <rect key="frame" x="30" y="179" width="220" height="35"/>
+                                                                        <color key="backgroundColor" red="0.8901960784313725" green="0.42352941176470588" blue="0.38823529411764707" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="20"/>
                                                                         <state key="normal" title="Login">
                                                                             <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -365,6 +373,12 @@
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                 <real key="value" value="5"/>
                                                                             </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" red="0.8901960784313725" green="0.42352941176470588" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="1.5"/>
+                                                                            </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="loginButtonDidTouch:" destination="Yrk-6x-doo" eventType="touchUpInside" id="igX-Vv-b3F"/>
@@ -372,7 +386,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pkm-h8-DJA" customClass="DesignableTextField" customModule="capture" customModuleProvider="target">
-                                                                        <rect key="frame" x="20" y="100" width="240" height="30"/>
+                                                                        <rect key="frame" x="30" y="90" width="240" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="Zm8-6z-LQR"/>
                                                                             <constraint firstAttribute="width" constant="240" id="fcN-WD-qKA"/>
@@ -401,11 +415,11 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </textField>
-                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRG-Fc-4Hg" customClass="DesignableTextField" customModule="capture" customModuleProvider="target">
-                                                                        <rect key="frame" x="20" y="155" width="240" height="40"/>
+                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRG-Fc-4Hg" customClass="DesignableTextField" customModule="capture" customModuleProvider="target">
+                                                                        <rect key="frame" x="30" y="129" width="240" height="40"/>
                                                                         <color key="textColor" red="0.99753895777479895" green="0.99753895777479895" blue="0.99753895777479895" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                 <real key="value" value="5"/>
@@ -424,9 +438,9 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </textField>
-                                                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1g-rA-sL9" customClass="DesignableButton" customModule="capture" customModuleProvider="target">
-                                                                        <rect key="frame" x="150" y="220" width="110" height="40"/>
-                                                                        <color key="backgroundColor" red="0.77254901960784317" green="0.40000000000000002" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1g-rA-sL9" customClass="DesignableButton" customModule="capture" customModuleProvider="target">
+                                                                        <rect key="frame" x="30" y="225" width="220" height="35"/>
+                                                                        <color key="backgroundColor" red="0.91764705882352937" green="0.62745098039215685" blue="0.3411764705882353" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="20"/>
                                                                         <state key="normal" title="Register">
                                                                             <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -436,41 +450,35 @@
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                 <real key="value" value="5"/>
                                                                             </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" red="0.91764705882352937" green="0.62745098039215685" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="1.5"/>
+                                                                            </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="loginButtonDidTouch:" destination="Yrk-6x-doo" eventType="touchUpInside" id="w0r-O6-4Zc"/>
                                                                             <action selector="registerButtonDidTouch:" destination="Yrk-6x-doo" eventType="touchUpInside" id="5gw-pC-9rb"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BEm-J4-M1A">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="70"/>
-                                                                        <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seek and Shoot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snI-SO-uly">
-                                                                                <rect key="frame" x="70" y="21" width="141" height="28"/>
-                                                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
-                                                                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                        </subviews>
-                                                                        <color key="backgroundColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                    </view>
-                                                                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="B1e-MM-j1V" customClass="SpringImageView" customModule="capture" customModuleProvider="target">
-                                                                        <rect key="frame" x="35" y="166" width="26" height="18"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shape" translatesAutoresizingMaskIntoConstraints="NO" id="B1e-MM-j1V" customClass="SpringImageView" customModule="capture" customModuleProvider="target">
+                                                                        <rect key="frame" x="35" y="135" width="26" height="27"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <color key="tintColor" red="0.98166044330000002" green="0.99753895780000001" blue="0.95471494889999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </imageView>
-                                                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-mail" translatesAutoresizingMaskIntoConstraints="NO" id="Zm8-0A-FXP" customClass="SpringImageView" customModule="capture" customModuleProvider="target">
-                                                                        <rect key="frame" x="35" y="106" width="26" height="18"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="Zm8-0A-FXP" customClass="SpringImageView" customModule="capture" customModuleProvider="target">
+                                                                        <rect key="frame" x="35" y="96" width="26" height="18"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <color key="tintColor" red="0.98166044326995117" green="0.99753895777479895" blue="0.95471494888510322" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </imageView>
                                                                 </subviews>
                                                                 <constraints>
                                                                     <constraint firstItem="pkm-h8-DJA" firstAttribute="centerY" secondItem="Zm8-0A-FXP" secondAttribute="centerY" id="CBC-xK-kXO"/>
-                                                                    <constraint firstItem="pkm-h8-DJA" firstAttribute="leading" secondItem="ZuW-WN-dRj" secondAttribute="leading" constant="20" id="DiD-Vs-2aB"/>
-                                                                    <constraint firstItem="pkm-h8-DJA" firstAttribute="leading" secondItem="Zm8-0A-FXP" secondAttribute="trailing" constant="-41" id="Z1v-wc-PJt"/>
+                                                                    <constraint firstItem="pkm-h8-DJA" firstAttribute="leading" secondItem="ZuW-WN-dRj" secondAttribute="leading" constant="30" id="DiD-Vs-2aB"/>
+                                                                    <constraint firstItem="pkm-h8-DJA" firstAttribute="leading" secondItem="Zm8-0A-FXP" secondAttribute="trailing" constant="-31" id="Z1v-wc-PJt"/>
                                                                     <constraint firstAttribute="centerX" secondItem="pkm-h8-DJA" secondAttribute="centerX" id="nOB-p1-3bO"/>
-                                                                    <constraint firstItem="pkm-h8-DJA" firstAttribute="top" secondItem="ZuW-WN-dRj" secondAttribute="top" constant="100" id="qRK-OR-PYs"/>
+                                                                    <constraint firstItem="pkm-h8-DJA" firstAttribute="top" secondItem="ZuW-WN-dRj" secondAttribute="top" constant="90" id="qRK-OR-PYs"/>
                                                                 </constraints>
                                                             </view>
                                                             <color key="backgroundColor" white="1" alpha="0.10000000000000001" colorSpace="deviceWhite"/>
@@ -485,6 +493,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </scrollView>
                                     </subviews>
                                 </view>
@@ -506,7 +515,11 @@
                     <navigationItem key="navigationItem" id="t1m-rE-Ny6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="closeButton" destination="FFo-FT-98b" id="wtB-fp-1js"/>
+                        <outlet property="dialogView" destination="Rjn-rA-EZg" id="WI2-Ic-Qff"/>
+                        <outlet property="emailImageView" destination="Zm8-0A-FXP" id="0bm-m2-i8e"/>
                         <outlet property="emailTextField" destination="pkm-h8-DJA" id="azx-Mw-iFc"/>
+                        <outlet property="passwordImageView" destination="B1e-MM-j1V" id="EQM-ME-3E7"/>
                         <outlet property="passwordTextField" destination="GRG-Fc-4Hg" id="Kzs-KW-iGK"/>
                     </connections>
                 </viewController>
@@ -727,11 +740,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="2 tone camera" width="60" height="41"/>
         <image name="CameraBody" width="59" height="39"/>
-        <image name="CameraBody + CameraDetailing + lense" width="61" height="41"/>
+        <image name="Shape" width="26" height="29"/>
+        <image name="email" width="26" height="18"/>
         <image name="first" width="30" height="30"/>
-        <image name="icon-mail" width="26" height="18"/>
-        <image name="icon-password" width="25" height="25"/>
         <image name="ios-heart" width="40" height="35"/>
         <image name="ios-heart-outline" width="40" height="35"/>
         <image name="nun" width="432" height="376"/>
