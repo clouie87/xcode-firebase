@@ -25,17 +25,26 @@ class ChallengeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var heartConfirmedButton: SpringButton!
     
+    @IBOutlet weak var maskTitleVisualEffectView: UIVisualEffectView!
     
     @IBOutlet weak var nextButton: SpringButton!
    
-    @IBOutlet weak var challengeImageView: DesignableImageView!
+    
+    @IBOutlet weak var maskVisualEffectVIew: UIVisualEffectView!
+    
+    @IBOutlet weak var darkTitleView: UIView!
+
+   
+    @IBOutlet weak var maskImageView: UIImageView!
+    
     @IBOutlet weak var titleImageView: UIImageView!
     
     weak var delegate: ChallengeTableViewCellDelegate?
     
     
     @IBAction func nextButtonDidTouch(sender: AnyObject) {
-        
+        self.maskImageView.alpha = 0
+        self.darkTitleView.alpha = 0
         delegate?.challengeTableViewCellDidTouchNext(self, sender: sender)
          println("button clicked")
         

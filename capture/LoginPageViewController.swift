@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginPageViewController: UIViewController {
+class LoginPageViewController: UIViewController, UITextFieldDelegate {
     
 
     @IBOutlet weak var emailTextField: DesignableTextField!
@@ -25,6 +25,8 @@ class LoginPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
@@ -40,14 +42,14 @@ class LoginPageViewController: UIViewController {
     func textFieldDidBeginEditing(textField: UITextField) {
         
         if textField == emailTextField {
-            emailImageView.image = UIImage(named: "Shape")
+            emailImageView.image = UIImage(named: "activeEmail")
             emailImageView.animate()
         } else {
             emailImageView.image = UIImage(named: "email")
         }
         
         if textField == passwordTextField {
-            passwordImageView.image = UIImage(named: "email")
+            passwordImageView.image = UIImage(named: "activeLock")
             passwordImageView.animate()
         } else {
             passwordImageView.image = UIImage(named: "Shape")
@@ -55,8 +57,8 @@ class LoginPageViewController: UIViewController {
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        emailImageView.image = UIImage(named: "email")
-        passwordImageView.image=UIImage(named: "Shape")
+        emailImageView.image = UIImage(named: "activeEmail")
+        passwordImageView.image=UIImage(named: "activeLock")
     }
     
     
@@ -70,36 +72,49 @@ class LoginPageViewController: UIViewController {
                     println("now logged in")
                 }
         })
-
-        //        return registered
+         println("we are performing the LoginSegue")
+         performSegueWithIdentifier("RegisterSegue", sender: self)
     }
     
     
     
     @IBAction func registerButtonDidTouch(sender: AnyObject){
-        ref.createUser(self.emailTextField.text as String, password: passwordTextField.text as String,withValueCompletionBlock: { error, result in
-                if error != nil {
-                    // There was an error creating the account
-                    println("there was an error")
-                } else {
-                    let uid = result["uid"] as? String
-                    println("Successfully created user account with uid: \(uid)")
-                    
-                    
-                    var user = [
-                        "uid": uid as String!,
-                        "name": self.emailTextField.text as String,
-                        "password": self.passwordTextField.text as String
-                    ]
-                    
-                    var usersRef = self.ref.childByAppendingPath(uid)
-                    usersRef.setValue(user)
-                    
-            
-                }
-        
-            })
+        println("registerSegue is happening")
+        performSegueWithIdentifier("LoginSegue", sender: self)
+//        ref.createUser(self.emailTextField.text as String, password: passwordTextField.text as String,withValueCompletionBlock: { error, result in
+//                if error != nil {
+//                    // There was an error creating the account
+//                    println("there was an error")
+//                } else {
+//                    let uid = result["uid"] as? String
+//                    println("Successfully created user account with uid: \(uid)")
+//                    
+//                    
+//                    var user = [
+//                        "uid": uid as String!,
+//                        "name": self.emailTextField.text as String,
+//                        "password": self.passwordTextField.text as String
+//                    ]
+//                    
+//                    var usersRef = self.ref.childByAppendingPath(uid)
+//                    usersRef.setValue(user)
+//                    
+//            
+//                }
+//        
+//            })
 
         }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "LoginSegue" {
+//            let toView = segue.destinationViewController as! SubmitsTableViewController
+////            toView.delegate = self
+//        }
+//        if segue.identifier == "RegisterSegue" {
+//            let toView = segue.destinationViewController as! SocialMedialViewController
+////            toView.delegate = self
+//        }
+//    }
     
 }
